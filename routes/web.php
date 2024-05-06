@@ -20,4 +20,22 @@ Route::get('/', function () {
         "anotherMessage" => "Hello hello"
     ];
     return view('home', $data);
-});
+})->name("home");
+
+Route::get('/about', function () {
+
+    $data = [
+        "aboutMessage" => "About",
+        "aboutParagraph" => "aboutaboutaboutabout"
+    ];
+    return view('about', $data);
+})->name("about");
+
+Route::get('/contacts', function () {
+
+    $data = [
+        "contactsMessage" => "contacts",
+        "contactsParagraph" => "contactscontactscontactscontacts"
+    ];
+    return view('contacts', $data);
+})->name("contacts");
