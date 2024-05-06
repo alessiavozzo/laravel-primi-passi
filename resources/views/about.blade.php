@@ -8,6 +8,8 @@
 </head>
 
 <body>
+    @include('layouts.header')
+
     <main>
         <h1>{{$aboutMessage}}</h1>
         <h2>{{$aboutParagraph}}</h2>

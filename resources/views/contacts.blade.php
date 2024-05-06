@@ -8,9 +8,12 @@
 </head>
 
 <body>
+    @include('layouts.header')
+
     <main>
-        <h1>{{$contactsMessage}}</h1>
-        <h2>{{$contactsParagraph}}</h2>
+        @foreach($messages as $message)
+        {{$message}}
+        @endforeach
     </main>
 </body>
 

@@ -34,8 +34,10 @@ Route::get('/about', function () {
 Route::get('/contacts', function () {
 
     $data = [
-        "contactsMessage" => "contacts",
-        "contactsParagraph" => "contactscontactscontactscontacts"
+        "messages" => [
+            "contactsMessage" => "contacts",
+            "contactsParagraph" => "contactscontactscontactscontacts"
+        ]
     ];
     return view('contacts', $data);
 })->name("contacts");
